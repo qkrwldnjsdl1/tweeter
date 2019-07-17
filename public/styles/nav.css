@@ -1,0 +1,25 @@
+#navi {
+    position: fixed;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #4056A1;
+    width: 100%;
+}
+
+#head {
+    float: left;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-family: Bungee;
+    line-height: 120px;
+}
+
+#head2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    float: right;
+    line-height: 120px;
+}

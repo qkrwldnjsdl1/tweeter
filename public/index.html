@@ -2,14 +2,23 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
+    <meta charset="utf-8" />
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
+    <!-- Bungee and Source Sans Pro Font CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <link href="https://www.transparenttextures.com/patterns/45-degree-fabric-light.png" rel="background-colour">
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
@@ -18,15 +27,66 @@
   </head>
 
   <body>
-
+  
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-    </nav>
+    <div id="navi">
+      <nav>
+        <a id="head">tweeter</a>
+        <a id="head2">Write a new tweet</a>
+      </nav>
+    </div>
+    <header id = "header">
+      <div>
+        <img src="/images/profile-hex.png"> 
+      </div>
+        <br>
+      <div>
+        <h2>Ji Won Park</h2>
+      </div>
+    </header>
+    
 
+  
+      
     <!-- Page-specific (main) content here -->
-    <main class="container">
-    </main>
+    <main>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form id = "form">
+          <textarea id = "textarea" name="text" placeholder="What are you humming about?"></textarea>
+          <br>
+          <input id = "input" type="submit" value="Tweet">
+          <span id ="counter">140</span>
+          <br>
+        </form>
+      </section>        
+      <article class = "posted">
+        <header class = "headArticle">
+          hi
+        </header>
+        <footer class = "footArticle">
+          hi
+        </footer>
+      </article>
+    <script src="scripts/composer-char-counter.js"></script>
 
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    <p>sadasdsda</p>
+    
+    </main>
+  
   </body>
+
 </html>
