@@ -89,7 +89,8 @@ const renderTweets = function(tweets) {
 $(document).ready(() => {
   $("#container").empty()
   $("#head2").click(function(){
-    $("#new-tweet").slideToggle(500);
+    $("#new-tweet").slideToggle(1300);
+    hideError()
   });
   $.ajax({url: "/tweets", success: function(result){
       renderTweets(result)
@@ -110,6 +111,7 @@ $(document).ready(() => {
           renderTweets(result)
         }});
       });
+      $("#textarea").val("")
     }
   });
 });

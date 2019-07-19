@@ -7,6 +7,7 @@
     right: 0;
     background: #4056A1;
     width: 100%;
+    z-index: 6;
 }
 
 #head {
@@ -15,6 +16,7 @@
     font-size: 35px;
     font-family: Bungee;
     line-height: 120px;
+    z-index:7;
 }
 
 #head2 {
@@ -26,6 +28,7 @@
     float: right;
     line-height: 120px;
     outline:none;
+    z-index:7;
 }
 
 #head2:hover {

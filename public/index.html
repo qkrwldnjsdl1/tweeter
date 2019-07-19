@@ -42,7 +42,6 @@
       <div>
         <img src="/images/profile-hex.png"> 
       </div>
-        <br>
       <div>
         <h2>Ji Won Park</h2>
       </div>
@@ -53,13 +52,13 @@
       
     <!-- Page-specific (main) content here -->
     <main>
-      <section id = "errorContainer">
-        <p id = "errorMessage">Tweets are empty!</p>
-      </section>
-      <section id = "errorContainer2">
-        <p id = "errorMessage2">There are more than 140 characters!</p>
-      </section>
       <section id="new-tweet">
+        <section id = "errorContainer">
+          <p id = "errorMessage">Tweets are empty!</p>
+        </section>
+        <section id = "errorContainer2">
+          <p id = "errorMessage2">There are more than 140 characters!</p>
+        </section>
         <form id = "form">
           <textarea id = "textarea" name="text" placeholder="What are you humming about?"></textarea>
           <br>
@@ -67,6 +66,7 @@
           <span id ="counter">140</span>
         </form>
       </section> 
+      <div style="clear: both"></div>
       <div id = "container">      
         <article class = "posted">
           <header class = "headArticle">
