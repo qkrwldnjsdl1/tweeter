@@ -39,7 +39,7 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
 }
 
 
@@ -65,15 +65,15 @@ function hideError() {
 
 const createTweetElement = function(tweet) {
     let $tweet = $('<article>').addClass("posted");
-    let $header = $('<header>').addClass("headArticle")
-    let $image = $('<div>').addClass("image")
-    let $id = $('<p>').addClass("ID").text(tweet.user.name)
-    let $hashtag = $('<p>').addClass("hashtag").text(tweet.user.handle)
-    let $textContent = $('<p>').addClass("textContent").text(tweet.content.text)
-    let $line = $('<hr>').addClass("line")
-    let $time = $('<time>').addClass("timeago").text(tweet.created_at)
-    let $emoji2 = $('<i>').addClass("em em-black_heart")
-    $header.append($image).append($id).append($hashtag).append($textContent).append($line).append($time).append($emoji2).appendTo($tweet)
+    let $header = $('<header>').addClass("headArticle");
+    let $image = $('<div>').addClass("image");
+    let $id = $('<p>').addClass("ID").text(tweet.user.name);
+    let $hashtag = $('<p>').addClass("hashtag").text(tweet.user.handle);
+    let $textContent = $('<p>').addClass("textContent").text(tweet.content.text);
+    let $line = $('<hr>').addClass("line");
+    let $time = $('<time>').addClass("timeago").text(tweet.created_at);
+    let $emoji2 = $('<i>').addClass("em em-black_heart");
+    $header.append($image).append($id).append($hashtag).append($textContent).append($line).append($time).append($emoji2).appendTo($tweet);
     return $tweet;
 }
 
@@ -82,36 +82,36 @@ const renderTweets = function(tweets) {
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
     tweets.forEach(tweet => {
-        $('#container').append(createTweetElement(tweet))
+        $('#container').append(createTweetElement(tweet));
     });
 }
 
 $(document).ready(() => {
-  $("#container").empty()
+  $("#container").empty();
   $("#head2").click(function(){
     $("#new-tweet").slideToggle(1300);
-    hideError()
+    hideError();
   });
   $.ajax({url: "/tweets", success: function(result){
-      renderTweets(result)
-  }})
+      renderTweets(result);
+  }});
   $("#form").submit(function(event){
     if ($(this).serialize() === "text=") {
       event.preventDefault();
-      showError1()
+      showError1();
     } else if ($(this).serialize().length > 145) {
       event.preventDefault();
-      showError2()
+      showError2();
     } else {
       event.preventDefault();
-      hideError()
-      $("#container").empty()
+      hideError();
+      $("#container").empty();
       $.post("/tweets",$(this).serialize(), (data)=> {
         $.ajax({url: "/tweets", success: function(result){
-          renderTweets(result)
+          renderTweets(result);
         }});
       });
-      $("#textarea").val("")
+      $("#textarea").val("");
     }
   });
 });
