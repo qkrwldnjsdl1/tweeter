@@ -8,9 +8,11 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
+    <!-- Emoji CSS-->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
     <!-- Bungee and Source Sans Pro Font CSS-->
     <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro&display=swap" rel="stylesheet">
-
     <link href="https://www.transparenttextures.com/patterns/45-degree-fabric-light.png" rel="background-colour">
 
     <!-- App CSS -->
@@ -24,6 +26,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+
   </head>
 
   <body>
@@ -32,7 +35,7 @@
     <div id="navi">
       <nav>
         <a id="head">tweeter</a>
-        <a id="head2">Write a new tweet</a>
+        <button id = "head2" onclick = "myFunction()"> <strong>Write</strong> a new tweet</button>
       </nav>
     </div>
     <header id = "header">
@@ -50,41 +53,37 @@
       
     <!-- Page-specific (main) content here -->
     <main>
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+      <section id = "errorContainer">
+        <p id = "errorMessage">Tweets are empty!</p>
+      </section>
+      <section id = "errorContainer2">
+        <p id = "errorMessage2">There are more than 140 characters!</p>
+      </section>
+      <section id="new-tweet">
         <form id = "form">
           <textarea id = "textarea" name="text" placeholder="What are you humming about?"></textarea>
           <br>
           <input id = "input" type="submit" value="Tweet">
           <span id ="counter">140</span>
-          <br>
         </form>
-      </section>        
-      <article class = "posted">
-        <header class = "headArticle">
-          hi
-        </header>
-        <footer class = "footArticle">
-          hi
-        </footer>
-      </article>
+      </section> 
+      <div id = "container">      
+        <article class = "posted">
+          <header class = "headArticle">
+            <div class="image"></div>​
+            <p class = "ID"> user ID</p>
+            <p class = "hashtag"> @Id </p>
+            <p class = "textContent">asdsadsdsadsadasdsaddsasd</p>
+            <hr class = "line">
+            <time class = "timeago"></p>
+            <i class="em em-black_heart"></i>
+            </div>
+          </header>
+        </article>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <script src="scripts/composer-char-counter.js"></script>
 
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    <p>sadasdsda</p>
-    
     </main>
   
   </body>

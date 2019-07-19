@@ -18,8 +18,17 @@
 }
 
 #head2 {
+    padding: 0px;
+    border: none;
     color: #FFFFFF;
+    background: transparent;
     font-size: 24px;
     float: right;
     line-height: 120px;
+    outline:none;
+}
+
+#head2:hover {
+    transform: scale(1.1);
+    color: red;
 }

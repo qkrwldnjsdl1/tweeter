@@ -1,6 +1,55 @@
+#errorMessage {
+    background-color:red;
+    width: 100%;
+    text-align: center;
+    display:none;
+    font-family: Bungee;
+    height: 100%;
+    margin-bottom:10px;
+    display:none;
+    margin-right:0px;
+}
+
+#errorMessage2 {
+    background-color:red;
+    width: 100%;
+    text-align: center;
+    display:none;
+    font-family: Bungee;
+    height: 100%;
+    margin-bottom:10px;
+    display:none;
+    margin-right:0px;
+}
+
+#errorContainer {
+    float:right;
+    text-align: center;
+    word-wrap:break-word;
+    margin-top:20px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display:none;
+    margin-right:0px;
+}
+
+#errorContainer2 {
+    margin-left:0%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-top:20px;
+    width: 100%;
+    height: 100%;
+    align-content:center;
+    display:none;
+    margin-right:0px;
+}
+
 input {
-    float: left;
-    margin-left: 365px;
+    margin-right: 335px;
     margin-top: 10px;
     padding: 5px;
     border: 0px;
@@ -22,12 +71,21 @@ textarea {
 	background-color: #c2997e;
 	background-position: bottom right;
 	background-repeat: no-repeat;;
+}
 
+.textContent {
+    float:left;
+    margin-top: 30px;
+    margin-left: 0px;
+    text-align: left;
+    width: 75%;
+    height: 100px;
+    margin-bottom: 30px;
+    overflow:hidden;
 }
 
 form span {
-    float:   right;
-    margin-right:365px;
+    margin-left: 335px;
     margin-top: 15px;
     color: black;
     font-size: 20px;
@@ -35,27 +93,122 @@ form span {
     
 }
 
-.posted header {
-    margin: none;
-    padding: 0px, 0px, 0px, 0px;
-    background-color: #c2997e;
-    border-top: solid;
-    border-left: solid;
-    border-right: solid;
+.posted {
     text-align:center;
+    margin-right: 15%;
+    margin-left: 15%;
     word-wrap:break-word;
-    color:black;
-
 }
 
-.posted footer {
-    color:black;
-    margin: none;
-    border-left:solid;
-    border-right: solid;
-    border-bottom: solid;
+.posted .headArticle {
+    overflow:hidden;
     padding: 0px;
-    background-color: #c2997e;
-    text-align:center;
+    margin-top: 60px;
+    width: 100%;
+    height: 300px;
+    background-color: beige;
+    border: 3px solid black;
     word-wrap:break-word;
+    color:black;
+}
+article:hover {
+    box-shadow: 10px 10px 10px 10px;
+}
+
+.ID {
+    margin-left: 3%;
+    margin-right: 3%;
+    float: left;
+}
+
+.hashtag {
+    float: right;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.line {
+    clear:left;
+    position: static;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-color:black;
+}
+
+.timeago {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    float: left;
+    margin-left:3%;
+}
+
+i:hover {
+    transform: scale(0.7);
+}
+
+i {
+    margin-right: 3%;
+    float: right;
+    transform: scale(0.5);
+    width: 81px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+  
+  #myBtn:hover {
+    background-color: red; /* Add a dark-grey background on hover */
+}
+
+
+div.image {
+    content:url(https://steemitimages.com/640x0/https://maxcdn.icons8.com/Share/icon/Users//user_male_circle_filled1600.png);
+    border: 1px solid beige;
+    float: left;
+    border-radius: 4px;
+    padding: 5px;
+    width: 80px;
+    outline: none;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+@media (max-width: 1024px) {
+    #counter {
+        display:none;
+    }
+    textarea {
+        width: 46%;
+    }
+    #input {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .textContent {
+        width: 95%;
+        margin-left: 20px;
+        word-wrap:break-word;
+        margin-top: 15px;
+    }
+}
+
+@media  (max-width: 1023px) {
+    .posted {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
