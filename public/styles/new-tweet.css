@@ -242,13 +242,14 @@ div.image {
     }
     #new-tweet {
         float:right;
-        width:45%;
+        width:50%;
         margin-top: 15%;
-        margin-right: 5%;
+        margin-right: 3%;
         margin-left: 0%;
     }
     #container {
         float:right;
+        margin-right: 6%;
         margin-left: 40%;
         margin-top: 8%;
     }
@@ -297,5 +298,9 @@ div.image {
     }
     #errorMessage {
         margin-top:0%;
+    }
+    .posted {
+        width: 100%;
+        margin-left:0%
     }
 }
