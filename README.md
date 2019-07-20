@@ -29,7 +29,7 @@ Functions of the Tweeter are:
   
 ## Final Product
 
-!["screenshot description"](https://github.com/qkrwldnjsdl1/tweeter/blob/master/images/image1.png)
+!["screenshot description"](https://github.com/qkrwldnjsdl1/tweeter/blob/master/images/img4.png)
 
 !["screenshot description"](https://github.com/qkrwldnjsdl1/tweeter/blob/master/images/image2.png)
 
