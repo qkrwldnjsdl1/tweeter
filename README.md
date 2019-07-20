@@ -15,3 +15,26 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- body-parser
+- chance
+- express
+
+
+Functions of the Tweeter are:
+
+- You can post tweets to the web page and see the previously posted tweets
+- Able to hide the tweet form
+- Alarms the user when the tweets do not meet the requirement
+- Responsive design features available
+  
+## Final Product
+
+!["screenshot description"](https://github.com/qkrwldnjsdl1/tinyapp/blob/master/docs/Create_TinyURL_Page.png)
+
+!["screenshot description"](https://github.com/qkrwldnjsdl1/tinyapp/blob/master/docs/Login_Page.png)
+
+!["screenshot description"](https://github.com/qkrwldnjsdl1/tinyapp/blob/master/docs/Main_Page.png)
+
+!["screenshot description"](https://github.com/qkrwldnjsdl1/tinyapp/blob/master/docs/URL_Created.png)
+
+
