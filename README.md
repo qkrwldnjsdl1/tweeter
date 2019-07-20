@@ -29,12 +29,10 @@ Functions of the Tweeter are:
   
 ## Final Product
 
-!["screenshot description"](https://github.com/qkrwldnjsdl1/tinyapp/blob/master/docs/Create_TinyURL_Page.png)
+!["screenshot description"](https://github.com/qkrwldnjsdl1/tweeter/blob/master/images/image1.png)
 
-!["screenshot description"](https://github.com/qkrwldnjsdl1/tinyapp/blob/master/docs/Login_Page.png)
+!["screenshot description"](https://github.com/qkrwldnjsdl1/tweeter/blob/master/images/image2.png)
 
-!["screenshot description"](https://github.com/qkrwldnjsdl1/tinyapp/blob/master/docs/Main_Page.png)
-
-!["screenshot description"](https://github.com/qkrwldnjsdl1/tinyapp/blob/master/docs/URL_Created.png)
+!["screenshot description"](https://github.com/qkrwldnjsdl1/tweeter/blob/master/images/image3.png)
 
 
