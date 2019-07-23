@@ -190,6 +190,12 @@ div.image {
     margin-left: 3px;
 }
 @media (max-width: 1023px) {
+    #counter {
+        float:right;
+        margin-left:0px;
+        margin-top:7px;
+
+    }
     #navi {
         background:#1abc9c;
     }
@@ -198,14 +204,13 @@ div.image {
     }
     #head2 {
         background:#1abc9c;
-    }
-    #counter {
-        display:none;
-    }
+    }   
     textarea {
         width: 100%;
     }
     #input {
+        float:left;
+        margin-top:0px;
         margin-left: 0px;
         margin-right: 10px;
     }
@@ -248,8 +253,9 @@ div.image {
         margin-left: 0%;
     }
     #container {
+        width:50%;
+        float:right;
         margin-right: 6%;
-        margin-left: 40%;
         margin-top: 8%;
     }
     .textContent {
