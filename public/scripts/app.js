@@ -71,7 +71,7 @@ const createTweetElement = function(tweet) {
     let $hashtag = $('<p>').addClass("hashtag").text(tweet.user.handle);
     let $textContent = $('<p>').addClass("textContent").text(tweet.content.text);
     let $line = $('<hr>').addClass("line");
-    let $time = $('<time>').addClass("timeago").text(tweet.created_at);
+    let $time = $('<time>').addClass("timeago").text(moment(new Date(tweet.created_at)).fromNow());
     let $emoji2 = $('<i>').addClass("em em-black_heart");
     $header.append($image).append($id).append($hashtag).append($textContent).append($line).append($time).append($emoji2).appendTo($tweet);
     return $tweet;

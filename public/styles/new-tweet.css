@@ -81,7 +81,7 @@ textarea {
     text-align: left;
     width: 75%;
     height: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     overflow:hidden;
 }
 
@@ -190,6 +190,9 @@ div.image {
     margin-left: 3px;
 }
 @media (max-width: 1023px) {
+    #header {
+        margin-top:85px;
+    }
     #counter {
         float:right;
         margin-left:0px;
@@ -201,9 +204,11 @@ div.image {
     }
     #head {
         background:#1abc9c;
+        font-size: 25px;
     }
     #head2 {
         background:#1abc9c;
+        font-size: 20px;
     }   
     textarea {
         width: 100%;
@@ -220,16 +225,11 @@ div.image {
         margin-left: 10px;
         word-wrap:break-word;
         margin-top: 15px;
+        margin-bottom:30px;
     }
     .posted {
         margin-left: 5%;
         margin-right: 5%;
-    }
-    #head {
-        font-size: 25px;
-    }
-    #head2 {
-        font-size: 20px;
     }
 }
 
